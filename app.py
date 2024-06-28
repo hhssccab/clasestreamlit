@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from utils import Data
 
-data = Data(".\iris.csv")
+data = Data("https://github.com/hhssccab/clasestreamlit/blob/main/iris.csv")
 flowers_variety = data.get_data()['variety'].unique()
 
 variety = st.selectbox(
